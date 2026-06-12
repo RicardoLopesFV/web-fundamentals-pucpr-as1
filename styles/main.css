@@ -1,0 +1,26 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+
+  /* Background gradient color */
+  background-color: var(--andesite-dark);
+  background-image:
+    radial-gradient(
+      ellipse at 20% -10%,
+      color-mix(in srgb, var(--brass-highlight) 18%, transparent),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 100%,
+      color-mix(in srgb, var(--copper-highlight) 14%, transparent),
+      transparent 55%
+    );
+}

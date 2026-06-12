@@ -1,0 +1,26 @@
+:root {
+  /* Font-sizes */
+  --font-size-sm: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xlg: 4rem;
+
+  /* Texts Colors */
+  --text-main: hsl(37, 35%, 91%);
+  --text-muted: hsl(36, 10%, 60%);
+  --text-accent-brass: hsl(39, 82%, 60%);
+
+  /* Metallic Colours */
+  --andesite-dark: hsl(240, 7%, 11%);
+  --andesite-polish: hsl(240, 5%, 18%);
+  --andesite-highlight: hsl(240, 4%, 40%);
+
+  --brass-dark: hsl(36, 56%, 35%);
+  --brass-base: hsl(36, 64%, 54%);
+  --brass-highlight: hsl(33, 84%, 63%);
+
+  --copper-dark: hsl(20, 48%, 27%);
+  --copper-base: hsl(20, 51%, 38%);
+  --copper-highlight: hsl(20, 63%, 48%);
+}
