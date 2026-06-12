@@ -24,3 +24,42 @@ body {
       transparent 55%
     );
 }
+
+.navbar {
+  width: 100%;
+  padding: 1.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.navbar .accent {
+  font-family: var(--font-family-titles);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--text-accent-brass);
+}
+
+.navbar .navbar-list {
+  width: 50%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.75rem;
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
