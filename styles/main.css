@@ -166,7 +166,7 @@ body {
 
 .container-btns .andesite-casing:hover {
   background: linear-gradient(180deg, var(--btn-andesite-top) 0%, var(--btn-andesite-base) 100%);
-  color: var(--btn-andesite-text-hover);
+  color: var(--text-accent-brass);
   border-color: #52525b;
   transform: translateY(-2px);
   box-shadow:

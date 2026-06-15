@@ -1,0 +1,73 @@
+.about .container {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about .about-text,
+.about .about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ----------------------- About Left Side ------------------------- */
+.about-text .copper-text {
+  font-family: var(--font-family-monospaced);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--copper-text);
+  text-transform: uppercase;
+}
+
+.about-text .title {
+  margin-top: -1rem;
+  font-family: var(--font-family-titles);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  line-height: 0.95;
+  color: var(--text-main);
+}
+
+.about-text .accent {
+  color: var(--text-accent-brass);
+}
+
+.about-text .paragraph {
+  max-width: 80%;
+  font-family: var(--font-family-primary);
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* ----------------------- About Right Side ------------------------- */
+.about-cards .card {
+  padding: 1.5rem 2rem;
+  background: linear-gradient(180deg, var(--btn-andesite-base) 0%, var(--btn-andesite-bottom) 100%);
+  color: var(--btn-andesite-text);
+  border: 1px solid var(--btn-andesite-border);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: 0.2s all ease-in-out;
+}
+
+.about-cards .card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-title {
+  margin-bottom: 1rem;
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  color: var(--text-accent-brass);
+}
+
+.card .card-paragraph {
+  font-family: var(--font-family-primary);
+  line-height: 1.5;
+}
