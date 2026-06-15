@@ -28,4 +28,19 @@
   --copper-dark: hsl(20, 48%, 27%);
   --copper-base: hsl(20, 51%, 38%);
   --copper-highlight: hsl(20, 63%, 48%);
+
+  /* Button Specific Colours */
+
+  --btn-brass-top: #ffc570;
+  --btn-brass-base: #f0a950;
+  --btn-brass-bottom: #d4983e;
+  --btn-brass-border: #d4983e;
+  --btn-brass-text: #121214;
+
+  --btn-andesite-top: #43434c;
+  --btn-andesite-base: #2c2c31;
+  --btn-andesite-bottom: #1a1a1e;
+  --btn-andesite-border: #3f3f46;
+  --btn-andesite-text: #b5b5ba;
+  --btn-andesite-text-hover: #ffffff;
 }
