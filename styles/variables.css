@@ -7,7 +7,7 @@
   /* Font-sizes */
   --font-size-sm: 0.875rem; /* 14px - Metadados, datas, labels de formulário e rodapés */
   --font-size-base: 1rem; /* 16px - Padrão universal e obrigatório para textos e parágrafos */
-  --font-size-md: 1.25rem; /* 20px - Subtítulos (H3/H4) ou textos de destaque no card */
+  --font-size-md: 1.5rem; /* 20px - Subtítulos (H3/H4) ou textos de destaque no card */
   --font-size-lg: 2.5rem; /* 32px - Títulos de seção (H2) */
   --font-size-xlg: 4rem; /* 64px - Títulos gigantes da Hero Section (H1) */
 

@@ -253,7 +253,7 @@ body {
   transition: 0.2s all ease-in-out;
 }
 
-.card .card-number {
+.machinery-cards .card .card-number {
   font-family: var(--font-family-monospaced);
   font-size: calc(var(--font-size-sm) - 3px);
   font-weight: 400;
@@ -262,15 +262,136 @@ body {
   text-transform: uppercase;
 }
 
-.card .title {
+.machinery-cards .card .title {
   color: var(--text-accent-brass);
   font-family: var(--font-family-titles);
   font-size: var(--font-size-md);
   font-weight: 500;
 }
 
-.card .paragraph {
+.machinery-cards .card .paragraph {
   font-family: var(--font-family-primary);
   line-height: 1.5;
   color: var(--text-muted);
+}
+
+/* ----------------------- Prices Styling ------------------------- */
+.prices .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.prices .copper-text {
+  font-family: var(--font-family-monospaced);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--copper-text);
+}
+
+.prices .title {
+  margin: 1rem 0 1rem;
+  color: var(--text-main);
+  font-family: var(--font-family-titles);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+}
+
+.prices .title .accent {
+  color: var(--text-accent-brass);
+}
+
+.prices .paragraph {
+  font-family: var(--font-family-primary);
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.prices .cards-prices {
+  margin-top: 3.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cards-prices .card {
+  padding: 1.5rem 2rem;
+  background: linear-gradient(180deg, var(--btn-andesite-base) 0%, var(--btn-andesite-bottom) 100%);
+  color: var(--btn-andesite-text);
+  border: 1px solid var(--btn-andesite-border);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: 0.2s all ease-in-out;
+}
+
+.cards-prices .card .title {
+  margin: 0;
+  font-size: var(--font-size-md);
+  color: var(--text-accent-brass);
+}
+
+.cards-prices .card .sub-title {
+  font-family: var(--font-family-monospaced);
+  font-size: calc(var(--font-size-sm) - 3px);
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.cards-prices .card .price {
+  margin: 1.5rem 0;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-titles);
+  font-weight: 400;
+  color: var(--text-main);
+}
+
+.cards-prices .card .month {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-monospaced);
+  color: var(--text-muted);
+}
+
+.cards-prices .card .card-specs {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards-prices .card .card-specs .spec {
+  width: 100%;
+  font-family: var(--font-family-primary);
+  font-size: calc(var(--font-size-base) - 5px);
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-align: center;
+  border: 1px solid var(--btn-andesite-border);
+  border-radius: 8px;
+}
+
+.card-specs .spec .accent {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-titles);
+  color: var(--text-accent-brass);
+}
+
+.cards-prices .card .card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-family: var(--font-family-primary);
+}
+
+.cards-prices .card .cards-btn {
+  padding: 1rem 2.5rem;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
