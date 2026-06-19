@@ -1,3 +1,4 @@
+/* ----------------------- Global Styling ------------------------- */
 .container {
   max-width: 1280px;
   width: 100%;
@@ -8,9 +9,9 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-attachment: fixed;
 
-  /* Background gradient color */
+  font-family: var(--font-family-primary);
+  background-attachment: fixed;
   background-color: var(--andesite-dark);
   background-image:
     radial-gradient(
@@ -25,6 +26,75 @@ body {
     );
 }
 
+.title {
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  line-height: 0.95;
+  color: var(--text-main);
+}
+
+.paragraph,
+.navbar-list {
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.accent {
+  color: var(--text-accent-brass);
+}
+
+.copper-text {
+  font-family: var(--font-family-monospaced);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--copper-text);
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.brass-plate {
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  color: var(--btn-brass-text);
+
+  background: linear-gradient(180deg, var(--btn-brass-base) 0%, var(--btn-brass-bottom) 100%);
+  border-color: var(--btn-brass-border);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    0 4px 12px rgba(240, 169, 80, 0.2);
+}
+
+.brass-plate:hover {
+  background: linear-gradient(180deg, var(--btn-brass-top) 0%, var(--btn-brass-base) 100%);
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.6),
+    0 6px 16px rgba(240, 169, 80, 0.3);
+}
+
+.brass-plate:active,
+.cards-prices .card .btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.machinery-cards,
+.cards-prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
 /* ----------------------- Navbar Styling ------------------------- */
 .navbar {
   width: 100%;
@@ -36,7 +106,6 @@ body {
 }
 
 .navbar .logo {
-  font-family: var(--font-family-primary);
   font-size: var(--font-size-sm);
   font-weight: 400;
   color: var(--text-muted);
@@ -49,7 +118,6 @@ body {
   font-size: var(--font-size-md);
   font-weight: 500;
   letter-spacing: 0.05em;
-  color: var(--text-accent-brass);
 }
 
 .navbar .navbar-list {
@@ -60,9 +128,7 @@ body {
   align-items: center;
   gap: 2.75rem;
 
-  font-family: var(--font-family-primary);
   font-size: var(--font-size-sm);
-  color: var(--text-muted);
 }
 
 .navbar .navbar-item {
@@ -86,27 +152,16 @@ body {
 }
 
 .hero .title {
-  font-family: var(--font-family-titles);
   font-size: var(--font-size-xlg);
-  font-weight: 500;
-  line-height: 0.95;
   text-align: center;
-  color: var(--text-main);
-}
-
-.hero .accent {
-  color: var(--text-accent-brass);
 }
 
 .hero .paragraph {
   width: 50%;
   margin: 0 auto;
 
-  font-family: var(--font-family-primary);
   font-size: var(--font-size-md);
-  font-weight: 400;
   text-align: center;
-  color: var(--text-muted);
 }
 
 /* ----------------------- Hero Buttons Styling ------------------------- */
@@ -120,41 +175,13 @@ body {
 }
 
 .container-btns .btn {
-  padding: 1rem 2.5rem;
-
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-
   font-size: var(--font-size-base);
   font-family: var(--font-family-monospaced);
-  transition: all 0.2s ease;
 }
 
 .container-btns .brass-plate {
   font-family: var(--font-family-titles);
-  font-weight: 500;
   color: var(--btn-brass-text);
-
-  background: linear-gradient(180deg, var(--btn-brass-base) 0%, var(--btn-brass-bottom) 100%);
-  border-color: var(--btn-brass-border);
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.4),
-    0 4px 12px rgba(240, 169, 80, 0.2);
-}
-
-.container-btns .brass-plate:hover {
-  background: linear-gradient(180deg, var(--btn-brass-top) 0%, var(--btn-brass-base) 100%);
-  transform: translateY(-2px);
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.6),
-    0 6px 16px rgba(240, 169, 80, 0.3);
-}
-
-/* Estado Active (Momento do clique) */
-.container-btns .brass-plate:active {
-  transform: translateY(0);
-  box-shadow: none;
 }
 
 .container-btns .andesite-casing {
@@ -204,42 +231,16 @@ body {
   align-items: flex-start;
 }
 
-.machinery-text .copper-text {
-  font-family: var(--font-family-monospaced);
-  font-size: var(--font-size-sm);
-  font-weight: 400;
-  letter-spacing: 3px;
-  color: var(--copper-text);
-  text-transform: uppercase;
-}
-
 .machinery-text .title {
   margin-top: 1rem;
-  font-family: var(--font-family-titles);
   font-size: var(--font-size-lg);
-  font-weight: 500;
-  line-height: 0.95;
-  color: var(--text-main);
-}
-
-.machinery-text .accent {
-  color: var(--text-accent-brass);
 }
 
 .machinery-text .paragraph {
   width: 80%;
-  font-family: var(--font-family-primary);
-  line-height: 1.5;
-  color: var(--text-muted);
 }
 
 /* ----------------------- Machinery Cards Styling ------------------------- */
-.machinery-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
 .machinery-cards .card {
   padding: 2rem;
   display: flex;
@@ -264,15 +265,7 @@ body {
 
 .machinery-cards .card .title {
   color: var(--text-accent-brass);
-  font-family: var(--font-family-titles);
   font-size: var(--font-size-md);
-  font-weight: 500;
-}
-
-.machinery-cards .card .paragraph {
-  font-family: var(--font-family-primary);
-  line-height: 1.5;
-  color: var(--text-muted);
 }
 
 /* ----------------------- Prices Styling ------------------------- */
@@ -283,39 +276,14 @@ body {
   padding: 8rem 0;
 }
 
-.prices .copper-text {
-  font-family: var(--font-family-monospaced);
-  font-size: var(--font-size-sm);
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--copper-text);
-}
-
 .prices .title {
   margin: 1rem 0 1rem;
-  color: var(--text-main);
-  font-family: var(--font-family-titles);
   font-size: var(--font-size-lg);
-  font-weight: 500;
-}
-
-.prices .title .accent {
-  color: var(--text-accent-brass);
-}
-
-.prices .paragraph {
-  font-family: var(--font-family-primary);
-  line-height: 1.5;
-  color: var(--text-muted);
 }
 
 .prices .cards-prices {
   margin-top: 3.5rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
 }
 
 .cards-prices .card {
@@ -400,7 +368,6 @@ body {
 
 .cards-prices .card .card-specs .spec {
   width: 100%;
-  font-family: var(--font-family-primary);
   font-size: calc(var(--font-size-base) - 5px);
   text-transform: uppercase;
   padding: 1rem 2rem;
@@ -412,7 +379,6 @@ body {
 .card-specs .spec .accent {
   font-size: var(--font-size-base);
   font-family: var(--font-family-titles);
-  color: var(--text-accent-brass);
 }
 
 .cards-prices .card .card-list {
@@ -420,19 +386,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  font-family: var(--font-family-primary);
   list-style-type: disc;
 }
 
 .cards-prices .card .btn {
   width: 100%;
   margin-top: 2.5rem;
-  padding: 1rem 2.5rem;
 
   background: transparent;
   border: 0.3px solid var(--text-accent-brass);
-  border-radius: 8px;
-  cursor: pointer;
 
   font-family: var(--font-family-titles);
   text-transform: uppercase;
@@ -440,7 +402,6 @@ body {
   text-align: center;
   color: var(--text-accent-brass);
   letter-spacing: 2px;
-  transition: all 0.2s ease-in-out;
 }
 
 .cards-prices .card .btn:hover {
@@ -452,11 +413,30 @@ body {
   color: var(--andesite-dark);
 }
 
-.cards-prices .card .brass {
+.cards-prices .card .brass-plate {
   background: linear-gradient(180deg, var(--btn-brass-base) 0%, var(--btn-brass-bottom) 100%);
   color: var(--andesite-dark);
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.4),
     0 0 50px color-mix(in srgb, var(--brass-highlight) 20%, transparent),
     inset 0 1px 2px color-mix(in srgb, var(--brass-highlight) 50%, transparent);
+}
+
+/* ----------------------- Contact Styling ------------------------- */
+.contact .container {
+  padding: 8rem 0;
+}
+
+.contact .title {
+  font-size: var(--font-size-lg);
+  text-align: center;
+}
+
+.contact .paragraph {
+  margin: 2rem 0;
+  text-align: center;
+}
+.contact .btn {
+  display: block;
+  margin: 0 auto;
 }
