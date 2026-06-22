@@ -1,3 +1,31 @@
+.input::placeholder,
+.textarea::placeholder,
+.select {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-monospaced);
+  color: color-mix(in srgb, var(--text-muted) 60%, transparent);
+  opacity: 1;
+}
+
+.input,
+.select {
+  caret-color: var(--text-accent-brass);
+}
+
+.input:focus,
+.select:focus {
+  outline: 1px solid var(--text-accent-brass);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--text-accent-brass) 20%, transparent);
+}
+
+select.select:invalid {
+  color: color-mix(in srgb, var(--text-muted) 60%, transparent);
+}
+
+.form {
+  margin-bottom: 6rem;
+}
+
 .form .title {
   margin-top: 6rem;
   font-size: var(--font-size-lg);
@@ -28,7 +56,7 @@
   max-width: 756px;
   width: 100%;
   padding: 2rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
 
   display: flex;
   flex-direction: column;
@@ -38,8 +66,9 @@
   border: 1px solid var(--andesite-polish);
   border-radius: 16px;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.35);
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 50px color-mix(in srgb, var(--brass-highlight) 20%, transparent),
+    inset 0 1px 2px color-mix(in srgb, var(--brass-highlight) 50%, transparent);
 }
 
 .form-container .copper-text {
@@ -65,7 +94,7 @@
 .input,
 .select {
   width: 100%;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: block;
@@ -81,6 +110,7 @@
 
 .confirmation {
   display: block;
+  margin-bottom: 0;
 }
 
 .confirmation .input {

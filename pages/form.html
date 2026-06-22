@@ -73,7 +73,7 @@
               <span class="description">(11) 99999-9999</span>
 
               <label class="label" for="city">City</label>
-              <input class="input" type="text" name="city" id="city" />
+              <input class="input" type="text" name="city" id="city" placeholder="Your city" />
               <span class="description">region hosted.</span>
             </div>
           </div>
@@ -83,22 +83,28 @@
             <div class="div">
               <label class="label" for="gearbox">Your Gearbox</label>
               <select class="select" name="gearbox" id="gearbox">
-                <option value="andesite">Andesite</option>
-                <option value="brass">Brass</option>
-                <option value="steel">Steel</option>
+                <option class="option" value="andesite">Andesite</option>
+                <option class="option" value="brass">Brass</option>
+                <option class="option" value="steel">Steel</option>
               </select>
               <span class="description">You can change any moment.</span>
             </div>
             <div class="div">
               <label class="label" for="players">Nº players</label>
-              <input class="input" type="number" name="players" id="players" />
+              <input
+                class="input"
+                type="number"
+                name="players"
+                id="players"
+                placeholder="Number of players"
+              />
               <span class="description">1 / 500.</span>
             </div>
           </div>
 
           <span class="copper-text">// 03 . Confirmation</span>
           <div class="section-container confirmation">
-            <input class="input" type="checkbox" name="checkbox" id="checkbox" />
+            <input class="input checkbox" type="checkbox" name="checkbox" id="checkbox" />
             <label class="label terms" for="checkbox"
               >I accept the terms and politics of cogwheels.</label
             >
@@ -121,9 +127,9 @@
           >.
         </p>
         <ul class="footer-list">
-          <li class="list-item">Status</li>
-          <li class="list-item">Terms</li>
-          <li class="list-item">Docs</li>
+          <li class="list-item"><a href="">Status</a></li>
+          <li class="list-item"><a href="">Terms</a></li>
+          <li class="list-item"><a href="">Docs</a></li>
           <li class="list-item"><a href="https://github.com/RicardoLopesFV">Github</a></li>
         </ul>
       </div>
