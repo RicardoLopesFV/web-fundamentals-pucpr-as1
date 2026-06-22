@@ -38,7 +38,6 @@ code {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* Recortes nas laterais do Ticket (Esquerda e Direita) */
 .ticket::before,
 .ticket::after {
   content: "";
@@ -89,7 +88,6 @@ code {
   border-radius: 8px;
 }
 
-/* Linha Divisória e Rodapé do Ticket */
 .ticket-footer {
   display: flex;
   justify-content: space-between;
@@ -132,6 +130,15 @@ code {
 .ticket-actions {
   display: flex;
   gap: 1rem;
+}
+
+.ticket-actions .btn {
+  color: var(--text-muted);
+}
+
+.ticket-actions .brass-plate {
+  color: var(--andesite-dark);
+  font-weight: 600;
 }
 
 /* ----------------------- Query String Block ------------------------- */

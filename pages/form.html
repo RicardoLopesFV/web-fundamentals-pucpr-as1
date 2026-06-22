@@ -42,12 +42,19 @@
       <div class="container">
         <h3 class="title">Forge your <span class="accent">server</span>.</h3>
         <p class="paragraph">Fill out the request below.</p>
-        <form class="form-container" method="post">
+        <form class="form-container" action="formAction.html" method="GET">
           <span class="copper-text">// 01 . Identification</span>
           <div class="section-container">
             <div class="div">
               <label class="label" for="full-name">Full name</label>
-              <input class="input" type="text" id="full-name" placeholder="Steve" />
+              <input
+                class="input"
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="Steve"
+                required
+              />
               <span class="description">Only letter, min 3 caracthers.</span>
 
               <label class="label" for="e-mail">Email</label>
@@ -57,6 +64,7 @@
                 name="email"
                 id="e-mail"
                 placeholder="Your best e-mail"
+                required
               />
               <span class="description">email@domain.com</span>
             </div>
@@ -69,11 +77,19 @@
                 name="phone"
                 id="phone"
                 placeholder="Your best number"
+                required
               />
               <span class="description">(11) 99999-9999</span>
 
               <label class="label" for="city">City</label>
-              <input class="input" type="text" name="city" id="city" placeholder="Your city" />
+              <input
+                class="input"
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your city"
+                required
+              />
               <span class="description">region hosted.</span>
             </div>
           </div>
@@ -82,7 +98,7 @@
           <div class="section-container">
             <div class="div">
               <label class="label" for="gearbox">Your Gearbox</label>
-              <select class="select" name="gearbox" id="gearbox">
+              <select class="select" name="gearbox" id="gearbox" required>
                 <option class="option" value="andesite">Andesite</option>
                 <option class="option" value="brass">Brass</option>
                 <option class="option" value="steel">Steel</option>
@@ -97,6 +113,7 @@
                 name="players"
                 id="players"
                 placeholder="Number of players"
+                required
               />
               <span class="description">1 / 500.</span>
             </div>
@@ -104,7 +121,7 @@
 
           <span class="copper-text">// 03 . Confirmation</span>
           <div class="section-container confirmation">
-            <input class="input checkbox" type="checkbox" name="checkbox" id="checkbox" />
+            <input class="input checkbox" type="checkbox" name="checkbox" id="checkbox" required />
             <label class="label terms" for="checkbox"
               >I accept the terms and politics of cogwheels.</label
             >

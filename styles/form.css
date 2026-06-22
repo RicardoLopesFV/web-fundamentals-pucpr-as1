@@ -10,6 +10,7 @@
 .input,
 .select {
   caret-color: var(--text-accent-brass);
+  color: var(--text-main);
 }
 
 .input:focus,

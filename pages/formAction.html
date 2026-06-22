@@ -22,10 +22,16 @@
         <nav class="navbar">
           <h3 class="logo"><span class="accent">Cogwheel</span><br />hosting co.</h3>
           <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#machinery">Machinery</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#prices">Prices</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="../index.html">Home</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html#machinery">Machinery</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html#prices">Prices</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html#contact">Contact</a>
+            </li>
             <li class="navbar-item"><a class="navbar-link" href="./about.html">About</a></li>
           </ul>
         </nav>
@@ -35,46 +41,44 @@
     <section class="receipt-section blueprint-bg">
       <div class="container receipt-container">
         <div class="receipt-header-text">
-          <h1 class="title">Engrenagens em <span class="accent">Movimento</span></h1>
-          <p class="paragraph">
-            Os dados abaixo foram lidos da URL (<code>?nome=...&email=...</code>) usando
-            <code>URLSearchParams</code>.
-          </p>
+          <h1 class="title">Contraptions in <span class="accent">Moviment</span>.</h1>
         </div>
 
         <div class="ticket">
           <div class="ticket-header">
-            <span class="copper-text">// RECIBO DE PEDIDO</span>
+            <span class="copper-text">// Receipt</span>
             <span class="copper-text" id="ticket-number">Nº -</span>
           </div>
 
           <div class="ticket-body">
-            <h3 class="title accent">Pedido Confirmado</h3>
-            <p class="paragraph">Guarde este recibo. Em produção, ele seria enviado por e-mail.</p>
+            <h3 class="title accent">Request Confirmed</h3>
+            <p class="paragraph">
+              Please retain this receipt. In production, it would be sent by email.
+            </p>
 
             <div id="ticket-data" class="ticket-data-empty">
-              Nenhum dado recebido na URL. Volte ao
-              <a href="form.html" class="accent">formulário</a> para enviar um pedido.
+              No data received in the URL. Return to
+              <a href="form.html" class="accent">Form</a> to submit a request.
             </div>
           </div>
 
           <div class="ticket-footer">
             <div class="status-indicator">
               <span class="status-dot error" id="status-dot"></span>
-              <span id="status-text" class="status-text error-text">sem dados</span>
+              <span id="status-text" class="status-text error-text">no data</span>
             </div>
 
             <div class="ticket-actions">
-              <a href="form.html" class="btn btn-outline">← Novo Pedido</a>
-              <a href="index.html" class="btn brass-plate">Voltar ao Início</a>
+              <a href="form.html" class="btn">← New Request</a>
+              <a href="../index.html" class="btn brass-plate">Home</a>
             </div>
           </div>
         </div>
 
         <div class="query-block">
-          <span class="copper-text">// QUERY STRING RECEBIDA</span>
+          <span class="copper-text">// QUERY STRING RECEIVED</span>
           <div class="code-terminal">
-            <code id="query-string">(vazia)</code>
+            <code id="query-string">(empty)</code>
           </div>
         </div>
       </div>
@@ -97,5 +101,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
