@@ -26,6 +26,14 @@ body {
     );
 }
 
+.blueprint-bg {
+  /* Cria a grade de engenharia com linhas sutis brancas */
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
 .title {
   font-family: var(--font-family-titles);
   font-weight: 500;

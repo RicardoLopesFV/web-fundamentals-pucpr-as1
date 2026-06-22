@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cogwheel Hosting - Receipt</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/formAction.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <h3 class="logo"><span class="accent">Cogwheel</span><br />hosting co.</h3>
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#machinery">Machinery</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#prices">Prices</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="receipt-section blueprint-bg">
+      <div class="container receipt-container">
+        <div class="receipt-header-text">
+          <h1 class="title">Engrenagens em <span class="accent">Movimento</span></h1>
+          <p class="paragraph">
+            Os dados abaixo foram lidos da URL (<code>?nome=...&email=...</code>) usando
+            <code>URLSearchParams</code>.
+          </p>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket-header">
+            <span class="copper-text">// RECIBO DE PEDIDO</span>
+            <span class="copper-text" id="ticket-number">Nº -</span>
+          </div>
+
+          <div class="ticket-body">
+            <h3 class="title accent">Pedido Confirmado</h3>
+            <p class="paragraph">Guarde este recibo. Em produção, ele seria enviado por e-mail.</p>
+
+            <div id="ticket-data" class="ticket-data-empty">
+              Nenhum dado recebido na URL. Volte ao
+              <a href="form.html" class="accent">formulário</a> para enviar um pedido.
+            </div>
+          </div>
+
+          <div class="ticket-footer">
+            <div class="status-indicator">
+              <span class="status-dot error" id="status-dot"></span>
+              <span id="status-text" class="status-text error-text">sem dados</span>
+            </div>
+
+            <div class="ticket-actions">
+              <a href="form.html" class="btn btn-outline">← Novo Pedido</a>
+              <a href="index.html" class="btn brass-plate">Voltar ao Início</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="query-block">
+          <span class="copper-text">// QUERY STRING RECEBIDA</span>
+          <div class="code-terminal">
+            <code id="query-string">(vazia)</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="copyright">© 2026 Cogwheel Hosting · forged in brass</span>
+        <p class="paragraph">
+          Crafted with passion by
+          <span class="accent"
+            ><a class="link" href="https://github.com/RicardoLopesFV">Ricardo</a></span
+          >.
+        </p>
+        <ul class="footer-list">
+          <li class="list-item"><a href="">Status</a></li>
+          <li class="list-item"><a href="">Terms</a></li>
+          <li class="list-item"><a href="">Docs</a></li>
+          <li class="list-item"><a href="https://github.com/RicardoLopesFV">Github</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

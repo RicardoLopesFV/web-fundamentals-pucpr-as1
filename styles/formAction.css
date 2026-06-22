@@ -1,0 +1,159 @@
+.receipt-section {
+  padding: 8rem 0;
+  min-height: calc(100vh - 100px);
+}
+
+.receipt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 800px;
+}
+
+.receipt-header-text {
+  text-align: center;
+}
+
+.receipt-header-text .title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+code {
+  font-family: var(--font-family-monospaced);
+  color: var(--text-muted);
+  background-color: var(--andesite-polish);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* ----------------------- The Ticket Shape ------------------------- */
+.ticket {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, var(--btn-andesite-base) 0%, var(--btn-andesite-bottom) 100%);
+  border: 1px solid var(--btn-andesite-border);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Recortes nas laterais do Ticket (Esquerda e Direita) */
+.ticket::before,
+.ticket::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--andesite-dark);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ticket::before {
+  left: -15px;
+  border-right: 1px solid var(--btn-andesite-border);
+}
+
+.ticket::after {
+  right: -15px;
+  border-left: 1px solid var(--btn-andesite-border);
+}
+
+/* ----------------------- Ticket Internal Layout ------------------------- */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem 1rem;
+}
+
+.ticket-body {
+  padding: 0 3rem 3rem;
+}
+
+.ticket-body .title {
+  font-size: var(--font-size-lg);
+  margin-bottom: 0.5rem;
+}
+
+.ticket-data-empty {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-family: var(--font-family-primary);
+  border: 1px dashed var(--btn-andesite-border);
+  border-radius: 8px;
+}
+
+/* Linha Divisória e Rodapé do Ticket */
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-top: 1px dashed var(--text-muted);
+}
+
+/* ----------------------- Status Indicators ------------------------- */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-family-monospaced);
+  font-size: var(--font-size-sm);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-dot.error {
+  background-color: #ef4444;
+  box-shadow: 0 0 10px #ef4444;
+}
+.status-text.error-text {
+  color: #ef4444;
+}
+
+.status-dot.success {
+  background-color: #10b981;
+  box-shadow: 0 0 10px #10b981;
+}
+.status-text.success-text {
+  color: #10b981;
+}
+
+.ticket-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ----------------------- Query String Block ------------------------- */
+.query-block {
+  width: 100%;
+  background: linear-gradient(180deg, var(--btn-andesite-base) 0%, var(--btn-andesite-bottom) 100%);
+  border: 1px solid var(--btn-andesite-border);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+
+.code-terminal {
+  margin-top: 1rem;
+  background-color: hsl(220, 21%, 8%);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--andesite-polish);
+}
+
+.code-terminal code {
+  background-color: transparent;
+  color: #60a5fa;
+  word-break: break-all;
+  padding: 0;
+}
