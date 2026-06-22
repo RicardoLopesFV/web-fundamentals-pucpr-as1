@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,41 +40,72 @@
 
     <section class="form">
       <div class="container">
-        <h3 class="title">Forge your server</h3>
-        <p class="paragraph">Fill out the request below</p>
-        <form method="post">
-          <span class="section-form">// 01 . Identification</span>
-          <label for="full-name">Full name</label>
-          <input type="text" id="full-name" placeholder="Steve" />
-          <span class="description">Only letter, min 3 caracthers.</span>
+        <h3 class="title">Forge your <span class="accent">server</span>.</h3>
+        <p class="paragraph">Fill out the request below.</p>
+        <form class="form-container" method="post">
+          <span class="copper-text">// 01 . Identification</span>
+          <div class="section-container">
+            <div class="div">
+              <label class="label" for="full-name">Full name</label>
+              <input class="input" type="text" id="full-name" placeholder="Steve" />
+              <span class="description">Only letter, min 3 caracthers.</span>
 
-          <label for="e-mail">Email</label>
-          <input type="email" name="email" id="e-mail" placeholder="Your best e-mail" />
-          <span class="description">email@domain.com</span>
+              <label class="label" for="e-mail">Email</label>
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="e-mail"
+                placeholder="Your best e-mail"
+              />
+              <span class="description">email@domain.com</span>
+            </div>
 
-          <label for="phone">Phone</label>
-          <input type="tel" name="phone" id="phone" placeholder="Your best number" />
-          <span class="description">(11) 99999-9999</span>
+            <div class="div">
+              <label class="label" for="phone">Phone</label>
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Your best number"
+              />
+              <span class="description">(11) 99999-9999</span>
 
-          <label for="city">City</label>
-          <input type="text" name="city" id="city" />
-          <span class="description">Where the server is gonna be hosted</span>
+              <label class="label" for="city">City</label>
+              <input class="input" type="text" name="city" id="city" />
+              <span class="description">region hosted.</span>
+            </div>
+          </div>
 
-          <span class="section-form">// 02 . Server Configs</span>
-          <label for="gearbox">Your Gearbox</label>
-          <select name="gearbox" id="gearbox">
-            <option value="andesite">Andesite</option>
-            <option value="brass">Brass</option>
-            <option value="steel">Steel</option>
-          </select>
+          <span class="copper-text">// 02 . Server Configs</span>
+          <div class="section-container">
+            <div class="div">
+              <label class="label" for="gearbox">Your Gearbox</label>
+              <select class="select" name="gearbox" id="gearbox">
+                <option value="andesite">Andesite</option>
+                <option value="brass">Brass</option>
+                <option value="steel">Steel</option>
+              </select>
+              <span class="description">You can change any moment.</span>
+            </div>
+            <div class="div">
+              <label class="label" for="players">Nº players</label>
+              <input class="input" type="number" name="players" id="players" />
+              <span class="description">1 / 500.</span>
+            </div>
+          </div>
 
-          <span class="section-form">03 . Confirmation</span>
-          <label for="checkbox">I accept the terms and politics of cogwheels.</label>
-          <input type="checkbox" name="checkbox" id="checkbox" />
-
-          <div class="btns">
-            <button type="submit" class="btn">Submit</button>
-            <button type="reset" class="btn">Reset</button>
+          <span class="copper-text">// 03 . Confirmation</span>
+          <div class="section-container confirmation">
+            <input class="input" type="checkbox" name="checkbox" id="checkbox" />
+            <label class="label terms" for="checkbox"
+              >I accept the terms and politics of cogwheels.</label
+            >
+            <div class="btns">
+              <button type="submit" class="btn brass-plate">Submit</button>
+              <button type="reset" class="btn andesite-casing">Reset</button>
+            </div>
           </div>
         </form>
       </div>

@@ -40,7 +40,8 @@ body {
   font-weight: 400;
 }
 
-.accent {
+.accent,
+.label {
   color: var(--text-accent-brass);
 }
 
@@ -80,6 +81,23 @@ body {
   box-shadow:
     inset 0 1px 1px rgba(255, 255, 255, 0.6),
     0 6px 16px rgba(240, 169, 80, 0.3);
+}
+
+.andesite-casing {
+  background: linear-gradient(180deg, var(--btn-andesite-base) 0%, var(--btn-andesite-bottom) 100%);
+  color: var(--btn-andesite-text);
+  border: 1px solid var(--btn-andesite-border);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.andesite-casing:hover {
+  background: linear-gradient(180deg, var(--btn-andesite-top) 0%, var(--btn-andesite-base) 100%);
+  color: var(--text-accent-brass);
+  border-color: #52525b;
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .machinery-cards,
@@ -176,23 +194,6 @@ body {
 .container-btns .brass-plate {
   font-family: var(--font-family-titles);
   color: var(--btn-brass-text);
-}
-
-.container-btns .andesite-casing {
-  background: linear-gradient(180deg, var(--btn-andesite-base) 0%, var(--btn-andesite-bottom) 100%);
-  color: var(--btn-andesite-text);
-  border: 1px solid var(--btn-andesite-border);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
-}
-
-.container-btns .andesite-casing:hover {
-  background: linear-gradient(180deg, var(--btn-andesite-top) 0%, var(--btn-andesite-base) 100%);
-  color: var(--text-accent-brass);
-  border-color: #52525b;
-  transform: translateY(-2px);
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.1),
-    0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .container-btns .andesite-casing:active {
