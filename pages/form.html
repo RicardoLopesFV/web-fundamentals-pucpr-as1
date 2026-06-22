@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cogwheel Hosting - Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <h3 class="logo"><span class="accent">Cogwheel</span><br />hosting co.</h3>
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="../index.html">Home</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html#machinery">Machinery</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html#prices">Prices</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html#contact">Contact</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="form">
+      <div class="container">
+        <h3 class="title">Forge your server</h3>
+        <p class="paragraph">Fill out the request below</p>
+        <form method="post">
+          <span class="section-form">// 01 . Identification</span>
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" placeholder="Steve" />
+          <span class="description">Only letter, min 3 caracthers.</span>
+
+          <label for="e-mail">Email</label>
+          <input type="email" name="email" id="e-mail" placeholder="Your best e-mail" />
+          <span class="description">email@domain.com</span>
+
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="Your best number" />
+          <span class="description">(11) 99999-9999</span>
+
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+          <span class="description">Where the server is gonna be hosted</span>
+
+          <span class="section-form">// 02 . Server Configs</span>
+          <label for="gearbox">Your Gearbox</label>
+          <select name="gearbox" id="gearbox">
+            <option value="andesite">Andesite</option>
+            <option value="brass">Brass</option>
+            <option value="steel">Steel</option>
+          </select>
+
+          <span class="section-form">03 . Confirmation</span>
+          <label for="checkbox">I accept the terms and politics of cogwheels.</label>
+          <input type="checkbox" name="checkbox" id="checkbox" />
+
+          <div class="btns">
+            <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="copyright">© 2026 Cogwheel Hosting · forged in brass</span>
+        <p class="paragraph">
+          Crafted with passion by
+          <span class="accent"
+            ><a class="link" href="https://github.com/RicardoLopesFV">Ricardo</a></span
+          >.
+        </p>
+        <ul class="footer-list">
+          <li class="list-item">Status</li>
+          <li class="list-item">Terms</li>
+          <li class="list-item">Docs</li>
+          <li class="list-item"><a href="https://github.com/RicardoLopesFV">Github</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
